@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tushar Rana | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+    <div class="logo">Tushar Rana</div>
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="darkModeToggle">🌙</button>
+
+    </nav>
+
 
     <!-- HERO SECTION -->
     <section id="hero">
-        <h1>Hi, I'm Tushar Rana</h1>
+        <h1>Hi, I'm Tushar</h1>
         <h2>Aspiring Data Analyst / Software Developer</h2>
         <p>I build simple and data-driven solutions using Python and SQL.</p>
         <a href="#contact" class="btn">Contact Me</a>
+        <a href="Tushar_Rana_Resume.pdf" class="btn" download>Download Resume</a>
+
     </section>
         <!-- ABOUT SECTION -->
-    <section id="about">
+    <section id="about" class="reveal">
         <h2>About Me</h2>
         <p>
             I am a Bachelor of Computer Applications (BCA) graduate with a strong interest
@@ -30,7 +49,7 @@
         </p>
     </section>
         <!-- SKILLS SECTION -->
-    <section id="skills">
+    <section id="skills" class="reveal">
         <h2>Skills</h2>
 
         <div class="skills-container">
@@ -56,7 +75,7 @@
         </div>
     </section>
         <!-- PROJECTS SECTION -->
-    <section id="projects">
+    <section id="projects" class="reveal">
         <h2>Projects</h2>
 
         <div class="projects-container">
@@ -101,7 +120,7 @@
         </div>
     </section>
         <!-- EDUCATION SECTION -->
-    <section id="education">
+    <section id="education" class="reveal">
         <h2>Education</h2>
 
         <div class="education-box">
@@ -111,7 +130,7 @@
         </div>
     </section>
         <!-- CONTACT SECTION -->
-    <section id="contact">
+    <section id="contact" class="reveal">
         <h2>Contact</h2>
         <p>Feel free to reach out for opportunities or collaborations.</p>
 
@@ -125,6 +144,7 @@
 
 
 
+<script src="script.js"></script>
 
 </body>
 </html>
