@@ -35,7 +35,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     padding: 15px 40px;
@@ -122,7 +123,8 @@ body {
 /* ABOUT SECTION */
 #about {
     padding: 80px 20px;
-    background-color: white;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -140,7 +142,8 @@ body {
 /* SKILLS SECTION */
 #skills {
     padding: 80px 20px;
-    background-color: #f4f6f8;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -170,7 +173,8 @@ body {
 /* PROJECTS SECTION */
 #projects {
     padding: 80px 20px;
-    background-color: white;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -188,7 +192,8 @@ body {
 }
 
 .project-card {
-    background-color: #f4f6f8;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     padding: 25px;
     border-radius: 8px;
     text-align: left;
@@ -211,7 +216,8 @@ body {
 /* EDUCATION SECTION */
 #education {
     padding: 80px 20px;
-    background-color: #f4f6f8;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -230,7 +236,8 @@ body {
 /* CONTACT SECTION */
 #contact {
     padding: 80px 20px;
-    background-color: white;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
