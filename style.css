@@ -155,8 +155,7 @@ h1, h2, h3 {
 /* ABOUT SECTION */
 #about {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: #f1f5f9;
     text-align: center;
 }
 
@@ -175,7 +174,6 @@ h1, h2, h3 {
 #skills {
     padding: 80px 20px;
     background-color: var(--bg-light);
-    color: var(--text-dark);
     text-align: center;
 }
 
@@ -205,8 +203,7 @@ h1, h2, h3 {
 /* PROJECTS SECTION */
 #projects {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: #f1f5f9;
     text-align: center;
 }
 
@@ -264,7 +261,6 @@ h1, h2, h3 {
 #education {
     padding: 80px 20px;
     background-color: var(--bg-light);
-    color: var(--text-dark);
     text-align: center;
 }
 
@@ -283,8 +279,7 @@ h1, h2, h3 {
 /* CONTACT SECTION */
 #contact {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: #f1f5f9;
     text-align: center;
 }
 
