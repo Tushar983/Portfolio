@@ -81,9 +81,18 @@ h1, h2, h3 {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
 }
+
+.nav-links a:hover {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+}
+
 
 
 /* HERO SECTION */
@@ -100,14 +109,6 @@ h1, h2, h3 {
     background-color: #1c3f76;
 
     color: white;
-}
-.hero-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid rgba(255,255,255,0.6);
 }
 
 
