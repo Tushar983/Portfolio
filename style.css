@@ -37,12 +37,12 @@ body {
     width: 100%;
     background-color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     z-index: 1000;
 }
+
 
 #darkModeToggle {
     background: none;
@@ -58,9 +58,13 @@ body {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
+    margin-left: auto;   /* KEY LINE */
+    margin-right: 20px;  /* space before dark mode */
+    gap: 18px;           /* space between links */
 }
+
 
 .nav-links li {
     margin-left: 20px;
