@@ -131,6 +131,14 @@ h1, h2, h3 {
 
 }
 
+#hero .btn {
+    background-color: white;
+    color: #1c3f76;
+    margin: 8px;
+    display: inline-block;
+}
+
+
 /* ABOUT SECTION */
 #about {
     padding: 80px 20px;
@@ -341,6 +349,11 @@ h1, h2, h3 {
         gap: 14px;
     }
 
+    .nav-links {
+    display: none;
+    }
+
+
     .logo {
         margin-bottom: 8px;
     }
@@ -356,6 +369,12 @@ h1, h2, h3 {
     #hero p {
     font-size: 0.95rem;
     }
+
+    #hero {
+    height: auto;
+    padding: 100px 20px 80px;
+    }
+
     .project-card,
     .skill-box {
     padding: 20px;
