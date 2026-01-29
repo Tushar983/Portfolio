@@ -84,18 +84,11 @@ body {
     padding: 20px;
     padding-top: 80px;
 
-    background: linear-gradient(
-        120deg,
-        #2563eb,
-        #3b82f6,
-        #60a5fa
-    );
-    background-size: 300% 300%;
-    animation: gradientMove 8s ease infinite;
+    background-color: #1c3f76;
 
     color: white;
-    
 }
+
 
 
 #hero h1 {
