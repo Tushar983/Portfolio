@@ -327,6 +327,48 @@ h1, h2, h3 {
     transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0 0;
+        gap: 14px;
+    }
+
+    .logo {
+        margin-bottom: 8px;
+    }
+
+    #hero h1 {
+    font-size: 2.2rem;
+    }
+
+    #hero h2 {
+    font-size: 1.1rem;
+    }
+
+    #hero p {
+    font-size: 0.95rem;
+    }
+    .project-card,
+    .skill-box {
+    padding: 20px;
+    }
+
+    .btn {
+    padding: 12px 24px;
+    }
+
+
+}
+
+
 
 
 
