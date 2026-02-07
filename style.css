@@ -1,15 +1,19 @@
 :root {
-    --primary-color: #2563eb;   /* blue */
-    --secondary-color: #1e293b; /* dark slate */
+    --primary-color: #1c3f76;   /* MAIN THEME COLOR */
     --bg-light: #f8fafc;
+    --bg-section: #1c3f76;
     --text-dark: #0f172a;
-}    
+    --text-light: #ffffff;
+}
+    
 
 /* DARK MODE COLORS */
 body.dark-mode {
     --bg-light: #0f172a;
     --text-dark: #e5e7eb;
+    --bg-section: #1c3f76;
 }
+
 
 
 html {
@@ -106,9 +110,8 @@ h1, h2, h3 {
     padding: 20px;
     padding-top: 80px;
 
-    background-color: #1c3f76;
-
-    color: white;
+    background-color: var(--bg-section);
+    color: var(--text-light);
 }
 
 
@@ -127,9 +130,10 @@ h1, h2, h3 {
 }
 
 #hero p {
-    font-size: 1rem;
-    opacity: 0.85;
-    margin-bottom: 25px;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 
@@ -137,8 +141,8 @@ h1, h2, h3 {
     padding: 14px 34px;
     border-radius: 30px;
     font-weight: 600;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: #1c3f76;
     border: none;
     cursor: pointer;
 }
@@ -155,8 +159,8 @@ h1, h2, h3 {
 /* ABOUT SECTION */
 #about {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: var(--bg-section);
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -169,13 +173,15 @@ h1, h2, h3 {
     max-width: 800px;
     margin: 10px auto;
     line-height: 1.6;
-    color: #555;
+    color: rgba(255, 255, 255, 0.85);
 }
+
+
 /* SKILLS SECTION */
 #skills {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: var(--bg-section);
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -193,7 +199,8 @@ h1, h2, h3 {
 }
 
 .skill-box {
-    background-color: white;
+    background-color: #ffffff;
+    color: #0f172a;
     padding: 20px;
     border-radius: 8px;
 }
@@ -205,8 +212,8 @@ h1, h2, h3 {
 /* PROJECTS SECTION */
 #projects {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: var(--bg-section);
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -224,8 +231,8 @@ h1, h2, h3 {
 }
 
 .project-card {
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: #ffffff;
+    color: #0f172a;
     padding: 25px;
     border-radius: 8px;
     text-align: left;
@@ -263,8 +270,8 @@ h1, h2, h3 {
 /* EDUCATION SECTION */
 #education {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: var(--bg-section);
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -274,7 +281,8 @@ h1, h2, h3 {
 }
 
 .education-box {
-    background-color: white;
+    background-color: #ffffff;
+    color: #0f172a;
     padding: 30px;
     max-width: 700px;
     margin: auto;
@@ -283,8 +291,8 @@ h1, h2, h3 {
 /* CONTACT SECTION */
 #contact {
     padding: 80px 20px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: var(--bg-section);
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -297,6 +305,7 @@ h1, h2, h3 {
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background-color: #e6edff;
 }
 
 .skill-box,
