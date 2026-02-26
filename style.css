@@ -174,24 +174,92 @@ h1, h2, h3 {
 
 /* ABOUT SECTION */
 #about {
-    padding: 80px 20px;
-    background-color: var(--bg-section);
-    color: var(--text-light);
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #0f172a, #0a0f1f);
+    color: white;
+}
+
+.about-container {
     text-align: center;
 }
 
-#about h2 {
-    font-size: 2.2rem;
+.about-title {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.about-left {
+    text-align: center;
+}
+
+.profile-wrapper {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #ff4ecd, #6c63ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.name-badge {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #6c63ff, #ff4ecd);
+    display: inline-block;
+}
+
+.name-badge h4 {
+    margin: 0;
+}
+
+.name-badge p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* RIGHT SIDE */
+.about-right {
+    max-width: 500px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.about-right p {
     margin-bottom: 20px;
 }
-
-#about p {
-    max-width: 800px;
-    margin: 10px auto;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.85);
-}
-
 
 /* SKILLS SECTION */
 #skills {
@@ -481,6 +549,15 @@ h1, h2, h3 {
         transform: none;
         margin-top: 10px;
         background: none;
+    }
+
+     .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-right {
+        text-align: center;
     }
 
 
