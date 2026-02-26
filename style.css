@@ -131,9 +131,12 @@ h1, h2, h3 {
 
 .gradient-text {
     background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
+
 
 .gradient-btn {
     display: inline-block;
