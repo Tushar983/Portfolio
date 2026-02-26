@@ -78,3 +78,10 @@ window.addEventListener("scroll", function() {
         navbar.style.boxShadow = "none";
     }
 });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
