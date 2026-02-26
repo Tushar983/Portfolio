@@ -407,33 +407,43 @@ h1, h2, h3 {
 }
 /* CONTACT SECTION */
 #contact {
-    padding: 80px 20px;
-    background-color: var(--bg-section);
-    color: var(--text-light);
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0f172a, #0a0f1f);
     text-align: center;
+    color: white;
 }
 
-.contact-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    background-color: #e6edff;
+.contact-title {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
 }
 
-.skill-box,
-.project-card {
-    transition: transform 0.3s ease;
+.contact-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 50px;
 }
 
-.skill-box:hover,
-.project-card:hover {
-    transform: translateY(-8px);
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
+
+.contact-icon {
+    font-size: 30px;
+    color: #60a5fa;
+    transition: 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    color: #3b82f6;
+}
+
 
 @keyframes gradientMove {
     0% {
