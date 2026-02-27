@@ -1,8 +1,10 @@
 const toggle = document.getElementById("darkModeToggle");
 
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
+if (toggle) {
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
+}
 
 const reveals = document.querySelectorAll(".reveal");
 
@@ -79,9 +81,4 @@ window.addEventListener("scroll", function() {
     }
 });
 
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
 
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
