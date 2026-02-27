@@ -94,7 +94,12 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
-
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
 
 /* HERO SECTION */
 #hero {
@@ -485,21 +490,25 @@ h1, h2, h3 {
 
 @media (max-width: 768px) {
 
-    .nav-links {
+.navbar {
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links.active {
+    display: flex;
     position: absolute;
     top: 70px;
-    right: -100%;
+    right: 0;
     width: 200px;
     background: #0f172a;
     flex-direction: column;
-    text-align: left;
     padding: 20px;
-    transition: 0.3s ease;
 }
 
-    .nav-links.active {
-    right: 0;
-}
 
     .hamburger {
     display: block;
@@ -583,12 +592,7 @@ h1, h2, h3 {
 }
 
 
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-}
+
 
 
 
