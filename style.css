@@ -285,10 +285,9 @@ h1, h2, h3 {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 50px;
-    max-width: 900px;
-    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    justify-items: center;
 }
 
 .skill-item {
@@ -570,6 +569,15 @@ h1, h2, h3 {
         text-align: center;
     }
 
+     .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .skill-item img {
+        width: 70px;
+    }
+
 
 
 }
@@ -582,28 +590,7 @@ h1, h2, h3 {
     color: white;
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: white;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: 0.3s ease;
-    z-index: 999;
-}
 
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
 
 /* Floating Social Icons */
 .social-float {
@@ -647,6 +634,11 @@ h1, h2, h3 {
     transform: scale(1.15);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+
+.whatsapp {
+    background: #25D366;
+}
+
 
 
 
