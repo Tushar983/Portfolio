@@ -339,8 +339,12 @@ h1, h2, h3 {
 }
 
 #projects h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: 40px;
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .projects-container {
@@ -398,8 +402,12 @@ h1, h2, h3 {
 
 
 #education h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: 30px;
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .education-box {
