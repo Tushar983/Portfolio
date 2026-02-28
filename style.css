@@ -85,13 +85,22 @@ h1, h2, h3 {
 }
 
 .nav-links a {
-    color: white;
+    position: relative;
 }
 
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    transition: 0.3s ease;
+}
 
-.nav-links a:hover {
-    background-color: rgba(37, 99, 235, 0.1);
-    color: var(--primary-color);
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .hamburger {
