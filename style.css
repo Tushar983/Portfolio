@@ -333,8 +333,8 @@ h1, h2, h3 {
 /* PROJECTS SECTION */
 #projects {
     padding: 80px 20px;
-    background-color: var(--bg-section);
-    color: var(--text-light);
+    background: linear-gradient(135deg, #0f172a, #0a0f1f);
+    color: white;
     text-align: center;
 }
 
@@ -391,8 +391,8 @@ h1, h2, h3 {
 /* EDUCATION SECTION */
 #education {
     padding: 80px 20px;
-    background-color: var(--bg-section);
-    color: var(--text-light);
+    background: linear-gradient(135deg, #0f172a, #0a0f1f);
+    color: white;
     text-align: center;
 }
 
