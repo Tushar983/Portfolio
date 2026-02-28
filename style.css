@@ -88,19 +88,20 @@ h1, h2, h3 {
     position: relative;
 }
 
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
-    transition: 0.3s ease;
+.nav-links a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.nav-links a:hover::after {
-    width: 100%;
+.nav-links a:hover {
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hamburger {
