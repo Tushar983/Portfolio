@@ -90,7 +90,6 @@ h1, h2, h3 {
 
 /* NAV LINK BASE */
 .nav-links a {
-    position: relative;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1rem;
