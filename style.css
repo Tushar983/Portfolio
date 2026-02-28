@@ -344,6 +344,7 @@ h1, h2, h3 {
     background: linear-gradient(90deg, #ff4ecd, #6c63ff);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  /* THIS WAS MISSING */
     color: transparent;
 }
 
@@ -407,6 +408,7 @@ h1, h2, h3 {
     background: linear-gradient(90deg, #ff4ecd, #6c63ff);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  /* THIS WAS MISSING */
     color: transparent;
 }
 
