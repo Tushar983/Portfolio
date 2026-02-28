@@ -88,20 +88,42 @@ h1, h2, h3 {
     position: relative;
 }
 
+/* NAV LINK BASE */
 .nav-links a {
+    position: relative;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: 0.5px;
     color: white;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
+/* GRADIENT TEXT HOVER */
 .nav-links a:hover {
     background: linear-gradient(90deg, #ff4ecd, #6c63ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* MODERN UNDERLINE */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff4ecd, #6c63ff);
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* UNDERLINE ANIMATION */
+.nav-links a:hover::after {
+    width: 70%;
 }
 
 .hamburger {
