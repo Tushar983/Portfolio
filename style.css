@@ -43,17 +43,25 @@ h1, h2, h3 {
 
 
 /* NAVBAR */
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: transparent;   /* changed */
-    color: white;              /* make text white */
+    background: transparent;
+    color: white;
     display: flex;
     align-items: center;
     padding: 20px 60px;
     z-index: 1000;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* ADD THIS */
+.navbar.scrolled {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 
