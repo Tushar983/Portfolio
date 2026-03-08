@@ -438,6 +438,7 @@ h1, h2, h3 {
 }
 
 .project-card {
+    position: relative;   /* ADD THIS */
     background: #1e293b;
     color: white;
     padding: 25px;
@@ -445,10 +446,7 @@ h1, h2, h3 {
     text-align: left;
     overflow: hidden;
 
-    /* SOFT GLOW EVEN WITHOUT HOVER */
-    box-shadow:
-    0 10px 25px rgba(0,0,0,0.45),
-    0 0 25px rgba(168,85,247,0.45);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
 
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -456,24 +454,23 @@ h1, h2, h3 {
 .project-card::before {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: -1px;
     border-radius: 18px;
-    padding: 1px;
-    background: linear-gradient(135deg,#6c63ff,#ff4ecd);
-    -webkit-mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0.4;
+    background: linear-gradient(135deg,#ff4ecd,#6c63ff,#ff4ecd);
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.6;
 }
 
 /* Premium hover lift */
 .project-card:hover {
     transform: translateY(-12px);
-    box-shadow:
-        0 20px 40px rgba(0,0,0,0.4),
-        0 0 30px rgba(168,85,247,0.7);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.project-card:hover::before{
+    opacity: 1;
+    filter: blur(14px);
 }
 
 /* 👇 ADD THIS RIGHT AFTER */
