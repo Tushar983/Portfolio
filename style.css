@@ -480,10 +480,7 @@ h1, h2, h3 {
     color: #007bff;
     text-decoration: none;
 }
-.project-card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease;
-}
+
 /* EDUCATION SECTION */
 #education {
     padding: 80px 20px;
@@ -563,25 +560,7 @@ h1, h2, h3 {
     }
 }
 
-.project-card {
-    animation: float 6s ease-in-out infinite;
-}
 
-.project-card:hover {
-    animation: none;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-6px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
 .reveal {
     opacity: 0;
