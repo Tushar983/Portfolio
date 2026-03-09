@@ -401,13 +401,26 @@ h1, h2, h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
+    width: 55px;          /* ADD */
+    height: 55px;         /* ADD */
+
+    display: flex;        /* ADD */
+    align-items: center;  /* ADD */
+    justify-content: center; /* ADD */
+
     background: rgba(0,0,0,0.7);
     color: white;
-    font-size: 26px;
-    padding: 14px;
+    font-size: 24px;
+
     border-radius: 50%;
     opacity: 0;
     transition: 0.3s ease;
+}
+
+.github-btn:hover{
+    background: linear-gradient(135deg,#ff4ecd,#6c63ff);
+    box-shadow: 0 0 20px rgba(255,78,205,0.6);
 }
 
 /* Show button on hover */
