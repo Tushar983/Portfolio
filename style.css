@@ -418,10 +418,7 @@ h1, h2, h3 {
     transition: 0.3s ease;
 }
 
-.github-btn:hover{
-    background: linear-gradient(135deg,#ff4ecd,#6c63ff);
-    box-shadow: 0 0 20px rgba(255,78,205,0.6);
-}
+
 
 /* Show button on hover */
 .project-card:hover .github-btn{
