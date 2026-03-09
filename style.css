@@ -400,24 +400,30 @@ h1, h2, h3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
-    width: 55px;          /* ADD */
-    height: 55px;         /* ADD */
+    width: 55px;
+    height: 55px;
 
-    display: flex;        /* ADD */
-    align-items: center;  /* ADD */
-    justify-content: center; /* ADD */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: rgba(0,0,0,0.7);
     color: white;
-    font-size: 24px;
 
     border-radius: 50%;
+    
+    text-decoration: none;   /* IMPORTANT */
+    line-height: 1;          /* IMPORTANT */
+
     opacity: 0;
     transition: 0.3s ease;
 }
-
+.github-btn i{
+    font-size: 22px;
+    pointer-events: none;
+}
 
 
 /* Show button on hover */
